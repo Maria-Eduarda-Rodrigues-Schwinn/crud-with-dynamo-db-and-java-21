@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "bb8c8089-1c50-411e-8229-8518664f0c9d",
+		"name": "Crud with DynamoDb + spring java 21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38493555"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"score\": 75 \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/players/maria/games",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"players",
+						"maria",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find user by username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/players/maria/games",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"players",
+						"maria",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/players/eduarda/games/2dcbc84e-fe3f-4abb-93ef-b70cf9c853e5",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"players",
+						"eduarda",
+						"games",
+						"2dcbc84e-fe3f-4abb-93ef-b70cf9c853e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update score",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"score\": 55\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/players/eduarda/games/2dcbc84e-fe3f-4abb-93ef-b70cf9c853e5",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"players",
+						"eduarda",
+						"games",
+						"2dcbc84e-fe3f-4abb-93ef-b70cf9c853e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/v1/players/maria/games/ae38c804-89db-4d96-bfed-d6398d194c30",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"players",
+						"maria",
+						"games",
+						"ae38c804-89db-4d96-bfed-d6398d194c30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
