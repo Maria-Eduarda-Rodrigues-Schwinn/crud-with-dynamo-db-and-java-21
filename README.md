@@ -9,7 +9,7 @@ DynamoDB.
 
 - Java 21
 - DynamoDB
-- Postman (caso queria testar)
+- Postman (caso queira testar)
 
 ## Configuração
 
